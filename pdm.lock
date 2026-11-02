@@ -2,10 +2,10 @@
 # It is not intended for manual editing.
 
 [metadata]
-groups = ["default", "notebook"]
+groups = ["default", "local", "notebook"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.1"
-content_hash = "sha256:491ee8060f9ce806b560f193cc2793ab9160f515980873d4534e637e7ffa0d63"
+content_hash = "sha256:34184c142247f5cc170042754435d06a4380ff62de8910de979f0fddbb839062"
 
 [[metadata.targets]]
 requires_python = "==3.13.*"
@@ -85,6 +85,42 @@ files = [
 ]
 
 [[package]]
+name = "contourpy"
+version = "1.4.0"
+requires_python = ">=3.12"
+summary = "Python library for calculating contours of 2D quadrilateral grids"
+groups = ["default"]
+dependencies = [
+    "numpy>=2.0",
+]
+files = [
+    {file = "contourpy-1.4.0-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:e21d1d4a9db5b3a793649c7ab0ddb4697f2818929eec871a7b9c45fce7b2a1ea"},
+    {file = "contourpy-1.4.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:196759a3e4db60e1546167e361090ebb6d199aa3aafc9e34ea17a5ac3b23e814"},
+    {file = "contourpy-1.4.0-cp313-cp313-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:9c0e07c691f3b3321913ed9b8161c50ea5f77fadd006f52f5e755359b0dcbfc5"},
+    {file = "contourpy-1.4.0-cp313-cp313-manylinux_2_26_ppc64le.manylinux_2_28_ppc64le.whl", hash = "sha256:7f861af508fca2384eef392bc1d8377cfa349b2b854cb11b45d89c75780e2561"},
+    {file = "contourpy-1.4.0-cp313-cp313-manylinux_2_26_s390x.manylinux_2_28_s390x.whl", hash = "sha256:a03b32c2e7eda8b17757c022162c13c86f5c3d6f937dddf9ba3c3ff7b513953b"},
+    {file = "contourpy-1.4.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:f1219a8898523cba821085f2da8a1b962cc696325763f09d7f93538ba43b2d70"},
+    {file = "contourpy-1.4.0-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:20da2f86bfaed60dbba729fe738c8241b1dd22b6cf7e8cbbf30df290bd04ba28"},
+    {file = "contourpy-1.4.0-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:6ced1670fafee703b8277ab1645072a226e74f167166eae146fb743916119b67"},
+    {file = "contourpy-1.4.0-cp313-cp313-pyemscripten_2025_0_wasm32.whl", hash = "sha256:abd0f7e51ecc52bf8c95713bd80b1c17c516a71fa391c54475308a4377903c2b"},
+    {file = "contourpy-1.4.0-cp313-cp313-win32.whl", hash = "sha256:510f7d93d94cf6ebf4e2cd0640bea16ab8affac7547230175b6745b596ce0599"},
+    {file = "contourpy-1.4.0-cp313-cp313-win_amd64.whl", hash = "sha256:6507a016976a75a15aee47809a34605de6244ccc056e6164bf9fb14b27eecad4"},
+    {file = "contourpy-1.4.0-cp313-cp313-win_arm64.whl", hash = "sha256:423bd5f4b3f11d54a8c597234e513382e3454bb106b8ec7ae32ba4ed63f8d99b"},
+    {file = "contourpy-1.4.0.tar.gz", hash = "sha256:20156f5a1ac4f8ce02656e39a61e82164a3d359796dc8026f75b062783d500e1"},
+]
+
+[[package]]
+name = "cycler"
+version = "0.12.1"
+requires_python = ">=3.8"
+summary = "Composable style cycles"
+groups = ["default"]
+files = [
+    {file = "cycler-0.12.1-py3-none-any.whl", hash = "sha256:85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30"},
+    {file = "cycler-0.12.1.tar.gz", hash = "sha256:88bb128f02ba341da8ef447245a9e138fae777f6a23943da4540077d3601eb1c"},
+]
+
+[[package]]
 name = "debugpy"
 version = "1.8.22"
 requires_python = ">=3.10"
@@ -108,6 +144,26 @@ groups = ["notebook"]
 files = [
     {file = "executing-2.3.0-py3-none-any.whl", hash = "sha256:736e859c9f8701f11fcf516856f26f562e04776387824b43a35a1dfe21c84122"},
     {file = "executing-2.3.0.tar.gz", hash = "sha256:15919cb5d667e5cb4e099511971d00d659573fff2dd5c4e6cd8b71636c7858d2"},
+]
+
+[[package]]
+name = "fonttools"
+version = "4.68.0"
+requires_python = ">=3.11"
+summary = "Tools to manipulate font files"
+groups = ["default"]
+files = [
+    {file = "fonttools-4.68.0-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:f15de48b82a816c72f358e772792801bd3788a156caa76e1806cb0aa8148cd61"},
+    {file = "fonttools-4.68.0-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:86d319a1feedfc75c8ff582d947b21fa1854e2829cb8cf9428784d750a05f1d9"},
+    {file = "fonttools-4.68.0-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:04a4868dcfcc23f00bb033147d5afc1a118a992842644c3eb9da55467ab4fd74"},
+    {file = "fonttools-4.68.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:08851f7d2b983412f490b73a7c56f17cbda1d4d85d2ad3f857564bf15b5d9475"},
+    {file = "fonttools-4.68.0-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:b6f7c5fabf5b1d9ca79f204664f2c3e2f8218e50aebc43e85e02df0b2d9cc313"},
+    {file = "fonttools-4.68.0-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:e3ecdb0b248cd0bf43100a8b3cb40f7b45d52ea4be8616edea5dea8fefe90229"},
+    {file = "fonttools-4.68.0-cp313-cp313-win32.whl", hash = "sha256:4da99b83ae17f531838bc750abf56164ff37e1543e8e9b2b5403548f50497ce0"},
+    {file = "fonttools-4.68.0-cp313-cp313-win_amd64.whl", hash = "sha256:6ed796b220654b4d37ad20af73419ec7969b669dd678cab88afb602c5683a331"},
+    {file = "fonttools-4.68.0-cp313-cp313-win_arm64.whl", hash = "sha256:cd4b0d00523cae1e5e1eaed1d2b85ef342cec000f58d0738e12b064d72a7bbc2"},
+    {file = "fonttools-4.68.0-py3-none-any.whl", hash = "sha256:d76f8fdcb6936f5e1045a0c9dd721a4bf11112e60d1e243bfa1d39f06a8b3104"},
+    {file = "fonttools-4.68.0.tar.gz", hash = "sha256:73294e233070f71e2b3653b6bd8564af676d57f26d075761fb06d1ab2e4a7a5d"},
 ]
 
 [[package]]
@@ -222,6 +278,34 @@ files = [
 ]
 
 [[package]]
+name = "kiwisolver"
+version = "1.5.1"
+requires_python = ">=3.10"
+summary = "A fast implementation of the Cassowary constraint solver"
+groups = ["default"]
+files = [
+    {file = "kiwisolver-1.5.1-cp313-cp313-ios_13_0_arm64_iphoneos.whl", hash = "sha256:b6ae6a0328f0bc035741820fdeecdcd67bf4694eee03972e843663107122f450"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-ios_13_0_arm64_iphonesimulator.whl", hash = "sha256:886fc26012f0e8b5f69d1cfe6d711f6b11f194621539bf8e6bb1c25c5dc82724"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-ios_13_0_x86_64_iphonesimulator.whl", hash = "sha256:aefe930d113798330e9462f7874542977869c0613cba3262e2de3a8d5dee8f3a"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:a5ca5aebae78a0bc13c1943af4af615d4966c5b650b05d5aa83b50e427196fee"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:1ed0f5e49d0ceff8b72190824d9e59c062fbbc02c231b853112c78474b3f5ec2"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:77a4c8187a5948d7f8795adb765a3c7b553d07d86d88e43038fc32fc1fb9a3f3"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:74ad5c3dad54a4641b4c28cd15ded70899d04459c6c7aeacafea716be97cce6d"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:21e46b23a2da695c364124817bc01d970effd5483147f8d66a6a7167e3f6b851"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-manylinux_2_24_ppc64le.manylinux_2_28_ppc64le.whl", hash = "sha256:75d9b1cf8258462dbdc1eeda718c96ea7f079324c09067f6daabfcf37712b7fe"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-manylinux_2_24_s390x.manylinux_2_28_s390x.whl", hash = "sha256:8fca690b00c4c48f6c2a547b0160ed511357093a4e4c9b47e0fadf3128066d89"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-manylinux_2_39_riscv64.whl", hash = "sha256:876bbfd276473d3daffe30e8c975df4ed9429967b41a6cb362dbb5155b6f13ad"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:f942903fde7363d1d879057ec5de01310efda2597161784d752fa9953a01a71a"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-musllinux_1_2_ppc64le.whl", hash = "sha256:c90d3022d8a94778939cda8638c6c8da8fa757b8958dad7ec868ce29c87681b8"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-musllinux_1_2_riscv64.whl", hash = "sha256:8a34616dc2521cc8dc1d7d081734da63539f021ac0450ce950908340c6e7aa2f"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-musllinux_1_2_s390x.whl", hash = "sha256:8bf4df63592c2a66b4f8edc5df2544998c288aa02f96ce0acd880cd1de8c8127"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:d09037ca068d784ebc4aec290ef952ca27ac15dd9c0b5801a88c6e1096b83e6b"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-win_amd64.whl", hash = "sha256:dc23390afe9f4ef9ac3bcc72a03a56eebbde03f4c571a32cb38f859cff9a6524"},
+    {file = "kiwisolver-1.5.1-cp313-cp313-win_arm64.whl", hash = "sha256:186884a58486651e3c217b6acea0a53eaa9498fdd472057c46f2f0fb5c25aad5"},
+    {file = "kiwisolver-1.5.1.tar.gz", hash = "sha256:f1303ef2eec81262a4b708c3e858afe58d7c75ad91c1c05266eda7673369859a"},
+]
+
+[[package]]
 name = "markdown-it-py"
 version = "4.2.0"
 requires_python = ">=3.10"
@@ -233,6 +317,34 @@ dependencies = [
 files = [
     {file = "markdown_it_py-4.2.0-py3-none-any.whl", hash = "sha256:9f7ebbcd14fe59494226453aed97c1070d83f8d24b6fc3a3bcf9a38092641c4a"},
     {file = "markdown_it_py-4.2.0.tar.gz", hash = "sha256:04a21681d6fbb623de53f6f364d352309d4094dd4194040a10fd51833e418d49"},
+]
+
+[[package]]
+name = "matplotlib"
+version = "3.11.2"
+requires_python = ">=3.11"
+summary = "Python plotting package"
+groups = ["default"]
+dependencies = [
+    "contourpy>=1.0.1",
+    "cycler>=0.10",
+    "fonttools>=4.28.2",
+    "kiwisolver>=1.3.1",
+    "numpy>=1.25",
+    "packaging>=20.0",
+    "pillow>=9",
+    "pyparsing>=3",
+    "python-dateutil>=2.7",
+]
+files = [
+    {file = "matplotlib-3.11.2-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:7d43ff8cebb50840648cb6429b2228621dbd709010f3117b3740abb20abf21c0"},
+    {file = "matplotlib-3.11.2-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:2a8285cea8ef4d92aa041d1c33788bcae82248503300f93f1ca2136b9049452f"},
+    {file = "matplotlib-3.11.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:1944895967f87c84c9b4bad29a707b31f5b36df4a3a2339ea1f8ea3ce5105539"},
+    {file = "matplotlib-3.11.2-cp313-cp313-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:af2661f6ac6bbd1d081996f54fdd9385715c625ace8cec0869055c0cfbf38981"},
+    {file = "matplotlib-3.11.2-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:7e5a90f8a707ebb6004a713b1cff091a40cc5df4c7c1cb165e5a505ebc11c292"},
+    {file = "matplotlib-3.11.2-cp313-cp313-win_amd64.whl", hash = "sha256:bc067c462a86f0e57bf52fc6e058d90171a5420007dac00c46e90153050c69a7"},
+    {file = "matplotlib-3.11.2-cp313-cp313-win_arm64.whl", hash = "sha256:3e8576f7c47e02fd4f21f44171302d2d1d58d4471d46da3d71fe8899d19539d9"},
+    {file = "matplotlib-3.11.2.tar.gz", hash = "sha256:cec596316640f2b394b8f0daa0ea61a8eae82d017b620b9f202befb972a59ea4"},
 ]
 
 [[package]]
@@ -261,6 +373,15 @@ files = [
 ]
 
 [[package]]
+name = "mydates"
+version = "0.1.0"
+requires_python = ">=3.10"
+editable = true
+path = "./mydates"
+summary = "Calendar helpers: leap year, weekday, ISO week number"
+groups = ["local"]
+
+[[package]]
 name = "nest-asyncio2"
 version = "1.7.4"
 requires_python = ">=3.5"
@@ -272,11 +393,32 @@ files = [
 ]
 
 [[package]]
+name = "numpy"
+version = "2.5.4"
+requires_python = ">=3.12"
+summary = "Fundamental package for array computing in Python"
+groups = ["default"]
+files = [
+    {file = "numpy-2.5.4-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:2377da2dd3ba2c1200956acbab2a358c83b8e1f8531191672d1cd6ad83250d53"},
+    {file = "numpy-2.5.4-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:7415db95818b39ec475a5eea54d9e3b6bc83e3912158e46da3438cdce399804d"},
+    {file = "numpy-2.5.4-cp313-cp313-macosx_14_0_arm64.whl", hash = "sha256:6d6a71b9d9a97c03633aa12565ef2825ffa036cc1d99cfd50dacf0f128af4fe2"},
+    {file = "numpy-2.5.4-cp313-cp313-macosx_14_0_x86_64.whl", hash = "sha256:d8200f16437b289a5bb927c6e184eccc3e8389bc0070fea4cd5b9e13c1757959"},
+    {file = "numpy-2.5.4-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:1c2e71b04c6cad90026e544501bbe0ab9290fa8a4d845e7e8c0d124fb429c988"},
+    {file = "numpy-2.5.4-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:6ffa07666f8da0eef81d149934a626d0d95fbd6838432a33e66245423a9062c0"},
+    {file = "numpy-2.5.4-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:2fa3328f784fc8277fc48026f6cad516f5c561c5d8e2e39b3c9e0c8f23223b34"},
+    {file = "numpy-2.5.4-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:b86966fbe4ad7de710422175572bcdc75fdedadfb54bc6fab7deabccddd7780b"},
+    {file = "numpy-2.5.4-cp313-cp313-win32.whl", hash = "sha256:5258bc06526964be5face2fc6f756857a3f24f21ec3e72ca131337a75b165d6c"},
+    {file = "numpy-2.5.4-cp313-cp313-win_amd64.whl", hash = "sha256:8b4d2fd2d34e5f8c9235ee787de5631a37a28402b15cb80814df973d2be54129"},
+    {file = "numpy-2.5.4-cp313-cp313-win_arm64.whl", hash = "sha256:bc39ac66a7a9a3fbd6134fda43136b60ffde99c8f4501e64e0d2b24da137babf"},
+    {file = "numpy-2.5.4.tar.gz", hash = "sha256:9a94cf751c9ad8ebaa835bcd3d40dacf8534ad086b88c38029b65123c7999d2a"},
+]
+
+[[package]]
 name = "packaging"
 version = "26.3"
 requires_python = ">=3.9"
 summary = "Core utilities for Python packages"
-groups = ["notebook"]
+groups = ["default", "notebook"]
 files = [
     {file = "packaging-26.3-py3-none-any.whl", hash = "sha256:d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"},
     {file = "packaging-26.3.tar.gz", hash = "sha256:94edc256424af38762eb31306eed28beb9f0efc50a8837492c9d6fd6004aed79"},
@@ -305,6 +447,28 @@ dependencies = [
 files = [
     {file = "pexpect-4.9.0-py2.py3-none-any.whl", hash = "sha256:7236d1e080e4936be2dc3e326cec0af72acf9212a7e1d060210e70a47e253523"},
     {file = "pexpect-4.9.0.tar.gz", hash = "sha256:ee7d41123f3c9911050ea2c2dac107568dc43b2d3b0c7557a33212c398ead30f"},
+]
+
+[[package]]
+name = "pillow"
+version = "13.0.0"
+requires_python = ">=3.11"
+summary = "Python Imaging Library (fork)"
+groups = ["default"]
+files = [
+    {file = "pillow-13.0.0-cp313-cp313-ios_13_0_arm64_iphoneos.whl", hash = "sha256:e98b4f91f99b24b1da72e10621ba181f7281922384a7403094debb4199de6c00"},
+    {file = "pillow-13.0.0-cp313-cp313-ios_13_0_arm64_iphonesimulator.whl", hash = "sha256:34fb3db1149c879343861831728c243c432d4a5afc8f1878ca7612ef8de2a033"},
+    {file = "pillow-13.0.0-cp313-cp313-ios_13_0_x86_64_iphonesimulator.whl", hash = "sha256:2d50500a4a3bc6469adcdb319cf05d688b08ca3bf0f22a05339f3b25b433a599"},
+    {file = "pillow-13.0.0-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:ef5fe6b7db3f501c56000ba8fe7c7e1a35ca1d45824fbeb95a67daa85cff4dbe"},
+    {file = "pillow-13.0.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:f11a3c1358bb3c68012a7b1f41b223c3db9f7bfde90b481df028cfe1c3363313"},
+    {file = "pillow-13.0.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:19b66ca0a4d25cc0200b381ce824c7ea090db61427315e73cfb05dbf1b35c369"},
+    {file = "pillow-13.0.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:5f56499c1a74d2b862beb0c33b8016f99d095858455df9d21583bbbc1c15b582"},
+    {file = "pillow-13.0.0-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:a2a14cd73d5e6c927f644b0110ee81f59c4ef506259ec9183904747f2caacc81"},
+    {file = "pillow-13.0.0-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:08b826a9bf1265c76de04a42061d61ea6b109418b7826f28ff1ecdfaa26c5502"},
+    {file = "pillow-13.0.0-cp313-cp313-win32.whl", hash = "sha256:12b0fa15879fe5a9d9eebe66e4e2d74128a773b1a4448010c9c714f45e04b9d8"},
+    {file = "pillow-13.0.0-cp313-cp313-win_amd64.whl", hash = "sha256:9dda0788a9932776a75d8bcc020076edc308ce2508b51f6739a45e3158b3fc42"},
+    {file = "pillow-13.0.0-cp313-cp313-win_arm64.whl", hash = "sha256:40a266371ece581e5de13b6635ef78d7487824af80561b6ca27694a88c19bc0f"},
+    {file = "pillow-13.0.0.tar.gz", hash = "sha256:cdcd1ba258178f7356d74170c9a81ba4eab6a5d55748bc402a5a2a6fe6be3510"},
 ]
 
 [[package]]
@@ -402,11 +566,22 @@ files = [
 ]
 
 [[package]]
+name = "pyparsing"
+version = "3.3.3"
+requires_python = ">=3.9"
+summary = "pyparsing - Classes and methods to define and execute parsing grammars"
+groups = ["default"]
+files = [
+    {file = "pyparsing-3.3.3-py3-none-any.whl", hash = "sha256:ece8c00a69cf01b45d0b1dedabb469c90d8caf996d4fda40f147627a122849a4"},
+    {file = "pyparsing-3.3.3.tar.gz", hash = "sha256:928ae7e20211f3b6f3915a72f06a0cfd29ab9d24279dd6346b6b1a7146397d36"},
+]
+
+[[package]]
 name = "python-dateutil"
 version = "4.0.0"
 requires_python = ">=3.11"
 summary = "Extensions to the standard Python datetime module"
-groups = ["notebook"]
+groups = ["default", "notebook"]
 dependencies = [
     "tzdata",
 ]
@@ -522,7 +697,7 @@ name = "tzdata"
 version = "2026.6"
 requires_python = ">=2"
 summary = "Provider of IANA time zone data"
-groups = ["notebook"]
+groups = ["default", "notebook"]
 files = [
     {file = "tzdata-2026.6-py2.py3-none-any.whl", hash = "sha256:0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec"},
     {file = "tzdata-2026.6.tar.gz", hash = "sha256:85d2cd9c09f81f0bb29db27759fc83af4f1e620efb814f8c5bf8b4cc4feece6d"},

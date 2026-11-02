@@ -5,7 +5,7 @@ description = "Default template for PDM package"
 authors = [
     {name = "Florian Lederer",email = "lf5781@mci4me.at"},
 ]
-dependencies = ["rich>=15.0.0"]
+dependencies = ["rich>=15.0.0", "matplotlib>=3.11.2"]
 requires-python = "==3.13.*"
 readme = "README.md"
 license = "MIT"
@@ -14,6 +14,13 @@ license = "MIT"
 [tool.pdm]
 distribution = false
 
+[tool.pdm.workspace]
+members = ["mydates"]
+
+[tool.pdm.dev-dependencies]
+local = [
+    "-e file:///${PROJECT_ROOT}/mydates#egg=mydates",
+]
 [dependency-groups]
 notebook = [
     "ipykernel>=7.4.0",

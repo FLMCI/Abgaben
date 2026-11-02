@@ -1,0 +1,11 @@
+[project]
+name = "mydates"
+version = "0.1.0"
+description = "Calendar helpers: leap year, weekday, ISO week number"
+requires-python = ">=3.10"
+authors = [{name = "Florian Lederer"}]
+dependencies = []
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
