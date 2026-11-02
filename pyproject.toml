@@ -1,0 +1,20 @@
+[project]
+name = "Abgaben_Software_Design"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Florian Lederer",email = "lf5781@mci4me.at"},
+]
+dependencies = ["rich>=15.0.0"]
+requires-python = "==3.13.*"
+readme = "README.md"
+license = "MIT"
+
+
+[tool.pdm]
+distribution = false
+
+[dependency-groups]
+notebook = [
+    "ipykernel>=7.4.0",
+]
