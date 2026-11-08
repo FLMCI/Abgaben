@@ -5,7 +5,7 @@ description = "Default template for PDM package"
 authors = [
     {name = "Florian Lederer",email = "lf5781@mci4me.at"},
 ]
-dependencies = ["rich>=15.0.0", "matplotlib>=3.11.2"]
+dependencies = ["rich>=15.0.0", "matplotlib>=3.11.2", "pandas>=3.1.1"]
 requires-python = "==3.13.*"
 readme = "README.md"
 license = "MIT"
