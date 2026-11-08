@@ -25,3 +25,6 @@ local = [
 notebook = [
     "ipykernel>=7.4.0",
 ]
+dev = [
+    "numpy>=2.5.4",
+]
